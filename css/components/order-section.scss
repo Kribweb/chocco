@@ -1,0 +1,17 @@
+.order-section {
+    background: url(/img/icons/pattern.png);
+
+    &::before {
+        content: url("/img/icons/blueberry.png");
+        position: absolute;
+        bottom: 21%;
+        left: 3%;
+    }
+
+    &::after {
+        content: url("/img/icons/leaf8.png");
+        position: absolute;
+        right: 5%;
+        bottom: 21%;
+    }
+}
