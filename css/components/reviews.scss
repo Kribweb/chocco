@@ -1,16 +1,16 @@
 .reviews__section {
-    background: url("./img/icons/leaf7.png") left bottom -60% no-repeat;
+    background: url("../img/icons/leaf7.png") left bottom -60% no-repeat;
     position: relative;
 
     &::before {
-        content: url("./img/icons/berries1.png");
+        content: url("../img/icons/berries1.png");
         position: absolute;
         bottom: -20%;
         left: 0;
     }
 
     &::after {
-        content: url("./img/icons/strawberry.png");
+        content: url("../img/icons/strawberry.png");
         position: absolute;
         right: 6%;
         top: 5%;
@@ -18,7 +18,7 @@
 }
 
 .reviews__display {
-    background: #f8faf9 url(./img/icons/drown-berries.png) right top no-repeat;
+    background: #f8faf9 url(../img/icons/drown-berries.png) right top no-repeat;
     padding: 50px 45px 34px;
     margin-bottom: 20px;
     overflow: hidden;

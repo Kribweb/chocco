@@ -1,9 +1,9 @@
 .benefits-section {
     position: relative;
-    background: url("./img/icons/grey-leaf.png") left top 57% no-repeat;
+    background: url("../img/icons/grey-leaf.png") left top 57% no-repeat;
 
     &::before {
-        content: url("./img/icons/waffles.png");
+        content: url("../img/icons/waffles.png");
         position: absolute;
         left: 0px;
         bottom: -25%;
