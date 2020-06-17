@@ -85,10 +85,10 @@ img {
   position: absolute;
   bottom: -55px;
   left: 20px;
-  content: url(.../img/icons/leaf1.png);
+  content: url(../../img/icons/leaf1.png);
 }
 .hero::after {
-  content: url(.../img/icons/berry-leafs.png);
+  content: url(../../img/icons/berry-leafs.png);
   position: absolute;
   bottom: -55px;
   right: 100px;
@@ -104,7 +104,7 @@ img {
   justify-content: space-between;
   height: 100%;
   padding: 24px 0 45px;
-  background: url(".../img/icons/choco.png") right center/50% auto no-repeat;
+  background: url("../../img/icons/choco.png") right center/50% auto no-repeat;
 }
 
 .hero__main-title {
@@ -262,7 +262,7 @@ img {
   position: relative;
 }
 .benefits__item::before {
-  content: url(".../img/icons/separator.png");
+  content: url("../../img/icons/separator.png");
   position: absolute;
   top: 50px;
   transform: translateX(200%);
@@ -308,10 +308,10 @@ img {
 
 .benefits-section {
   position: relative;
-  background: url(".../img/icons/grey-leaf.png") left top 57% no-repeat;
+  background: url("../../img/icons/grey-leaf.png") left top 57% no-repeat;
 }
 .benefits-section::before {
-  content: url(".../img/icons/waffles.png");
+  content: url("../../img/icons/waffles.png");
   position: absolute;
   left: 0px;
   bottom: -25%;
@@ -335,7 +335,7 @@ img {
 }
 
 .reviews__display {
-  background: #f8faf9 url(.../img/icons/drown-berries.png) right top no-repeat;
+  background: #f8faf9 url(../../img/icons/drown-berries.png) right top no-repeat;
   padding: 50px 45px 34px;
   margin-bottom: 20px;
   overflow: hidden;
@@ -425,16 +425,16 @@ img {
 }
 
 .order-section {
-  background: url(.../img/icons/pattern.png);
+  background: url(../../img/icons/pattern.png);
 }
 .order-section::before {
-  content: url(".../img/icons/blueberry.png");
+  content: url("../../img/icons/blueberry.png");
   position: absolute;
   bottom: 21%;
   left: 3%;
 }
 .order-section::after {
-  content: url(".../img/icons/leaf8.png");
+  content: url("../../img/icons/leaf8.png");
   position: absolute;
   right: 5%;
   bottom: 21%;
@@ -494,7 +494,7 @@ img {
   border-radius: 0px;
 }
 .radio--checkbox::before {
-  background: url(".../img/icons/checkmark.svg") center center no-repeat;
+  background: url("../../img/icons/checkmark.svg") center center no-repeat;
 }
 
 .radio__elem {
