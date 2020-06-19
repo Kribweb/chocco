@@ -218,7 +218,8 @@ img {
 }
 
 .section {
-  height: 100vp;
+  height: 100vh;
+  width: 100vw;
   min-height: 650px;
   display: flex;
   flex-direction: column;
@@ -318,17 +319,18 @@ img {
 }
 
 .reviews__section {
-  background: url(".../img/icons/leaf7.png") left bottom -60% no-repeat;
+  background: url("../../img/icons/leaf7.png") left bottom -60% no-repeat;
   position: relative;
+  z-index: 4;
 }
 .reviews__section::before {
-  content: url(".../img/icons/berries1.png");
+  content: url("../../img/icons/berries1.png");
   position: absolute;
   bottom: -20%;
   left: 0;
 }
 .reviews__section::after {
-  content: url(".../img/icons/strawberry.png");
+  content: url("../../img/icons/strawberry.png");
   position: absolute;
   right: 6%;
   top: 5%;
@@ -482,6 +484,11 @@ img {
 .form__controls {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 14px;
+}
+
+.form__btns {
+  margin-top: 34px;
 }
 
 .radio {
@@ -489,11 +496,12 @@ img {
   cursor: pointer;
   -webkit-user-select: none;
           user-select: none;
+  margin-right: 19px;
 }
 .radio--checkbox .radio__visible {
   border-radius: 0px;
 }
-.radio--checkbox::before {
+.radio--checkbox .radio__visible::before {
   background: url("../../img/icons/checkmark.svg") center center no-repeat;
 }
 
@@ -510,6 +518,7 @@ img {
   position: relative;
   border-radius: 50%;
   background: white;
+  margin-right: 9px;
 }
 .radio__visible::before {
   content: "";

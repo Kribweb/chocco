@@ -2,14 +2,15 @@
     display: flex;
     cursor: pointer;
     user-select: none;
+    margin-right: 19px;
 
     &--checkbox {
         .radio__visible {
             border-radius: 0px;
-        }
 
-        &::before {
-            background: url("../../img/icons/checkmark.svg") center center no-repeat;
+            &::before {
+                background: url("../../img/icons/checkmark.svg") center center no-repeat;
+            }
         }
     }
 }
@@ -30,6 +31,7 @@
     position: relative;
     border-radius: 50%;
     background: white;
+    margin-right: 9px;
 
     &::before {
         content: "";
