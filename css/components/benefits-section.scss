@@ -2,10 +2,22 @@
     position: relative;
     background: url("../../img/icons/grey-leaf.png") left top 57% no-repeat;
 
+    @include tablets {
+        background-position: left top 10%;
+    }
+
+    @include phones {
+        background: none;
+    }
+
     &::before {
         content: url("../../img/icons/waffles.png");
         position: absolute;
-        left: 0px;
+        left: rem(0px);
         bottom: -25%;
+
+        @include phones {
+            display: none;
+        }
     }
 }

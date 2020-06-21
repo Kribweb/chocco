@@ -1,0 +1,15 @@
+.menu__list {
+  display: flex;
+  align-items: center;
+}
+
+.menu__item {
+  margin-right: rem(15px);
+}
+.menu__item:last-child {
+  margin-right: rem(0px);
+}
+
+.menu__link {
+  text-decoration: none;
+}

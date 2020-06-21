@@ -3,9 +3,18 @@
 }
 
 .headline__title {
-    margin-bottom: 25px;
+    margin-bottom: rem(25px);
+
+    @include phones {
+        margin-bottom: rem(1px);
+    }
+
 }
 
 .headline__subtitle {
-    padding: 0px 26% 49px;
+    padding: rem(0px) 26% rem(49px);
+
+    @include phones {
+        padding: 0 5% 5%;
+    }
 }

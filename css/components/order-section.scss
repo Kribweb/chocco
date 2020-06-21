@@ -1,11 +1,26 @@
 .order-section {
     background: url(../../img/icons/pattern.png);
 
+    &:before,
+    &::after {
+        @include phones {
+            display: none;
+        }
+
+        @include tablets {
+            display: none;
+        }
+    }
+
     &::before {
         content: url("../../img/icons/blueberry.png");
         position: absolute;
         bottom: 21%;
         left: 3%;
+
+        @include tablets {
+            bottom: 24%;
+        }
     }
 
     &::after {
@@ -13,5 +28,9 @@
         position: absolute;
         right: 5%;
         bottom: 21%;
+
+        @include tablets {
+            bottom: 24%;
+        }
     }
 }

@@ -1,0 +1,22 @@
+.socials {
+    display: flex;
+}
+
+.socials__item {
+    width: rem(23px);
+    height: rem(13px);
+    margin-right: rem(16px);
+
+    &:last-child {
+        margin-right: rem(0px);
+    }
+
+}
+
+.socials__link {
+    display: block;
+
+    &:hover {
+        opacity: 0.4;
+    }
+}
