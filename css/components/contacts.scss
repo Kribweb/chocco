@@ -1,3 +1,13 @@
+.contacts {
+    flex-direction: column;
+    align-items: center;
+
+    @include phones {
+        display: flex;
+        margin-bottom: rem(9px);
+    }
+}
+
 .contacts__place {
     font-size: rem(21px);
     font-weight: bold;
