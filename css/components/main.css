@@ -111,6 +111,10 @@ img {
   fill: #c2c3c4;
 }
 
+.button__arrow-elem {
+  fill: #151515;
+}
+
 .hero {
   background: url("../../img/icons/big-leaf.png") right bottom no-repeat;
   background-color: #61c4d9;
@@ -321,6 +325,10 @@ img {
   text-transform: uppercase;
   text-align: center;
   color: #000;
+}
+
+.food {
+  display: none;
 }
 
 .headline {
@@ -820,6 +828,11 @@ img {
     display: none;
   }
 }
+@media screen and (max-width: 480px) {
+  .menu {
+    display: none;
+  }
+}
 
 .menu__list {
   display: flex;
@@ -831,8 +844,23 @@ img {
   .menu__list {
     position: absolute;
     top: 0;
-    right: 0;
-    left: 0;
+    right: -5%;
+    left: -5%;
+    bottom: 0;
+    background-color: #343639;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 480px) {
+  .menu__list {
+    position: absolute;
+    top: 0;
+    right: -5%;
+    left: -5%;
     bottom: 0;
     background-color: #343639;
     display: flex;
@@ -845,6 +873,7 @@ img {
 
 .menu__opened {
   display: flex;
+  width: 100%;
 }
 
 .menu__cross {
@@ -853,7 +882,17 @@ img {
 @media screen and (max-width: 768px) {
   .menu__cross {
     position: absolute;
-    right: 3%;
+    right: -1%;
+    top: 2%;
+    cursor: pointer;
+    background-color: #343639;
+    display: flex;
+  }
+}
+@media screen and (max-width: 480px) {
+  .menu__cross {
+    position: absolute;
+    right: -1%;
     top: 2%;
     cursor: pointer;
     background-color: #343639;
