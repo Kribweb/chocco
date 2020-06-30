@@ -1,10 +1,10 @@
-const hamburger = document.querySelector(".hamburger__plank");
-const menu__list = document.querySelector(".menu__list");
-const menu__cross = document.querySelector(".menu__cross");
+const hamburger = document.querySelector(".hamburger");
+const menuList = document.querySelector(".menu__list");
+const menuCross = document.querySelector(".menu__cross");
 
-hamburger__plank.addEventListener("click", function () {
-    menu__list.classList.add("menu__opened");
+hamburger.addEventListener("click", function (e) {
+    e.preventDefault();
+    menuList.classList.add("menu__opened");
 });
-menu__cross.addEventListener("click", function () {
-    menu__list.classList.remove("menu__opened");
-});
+
+console.log("test");
