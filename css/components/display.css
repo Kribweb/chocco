@@ -1,0 +1,8 @@
+.display {
+  display: flex;
+  justify-content: space-between;
+}
+
+.display__main {
+  width: 46%;
+}

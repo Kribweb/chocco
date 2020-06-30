@@ -327,10 +327,6 @@ img {
   color: #000;
 }
 
-.food {
-  display: none;
-}
-
 .headline {
   text-align: center;
 }
@@ -471,6 +467,73 @@ img {
   }
 }
 
+.display {
+  display: flex;
+  justify-content: space-between;
+}
+
+.display__main {
+  width: 40%;
+}
+
+.display__title {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 0.5555555556rem;
+}
+
+.display__text {
+  font-size: 1rem;
+  color: #666666;
+  margin-bottom: 1.6666666667rem;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.details__text {
+  font-weight: bold;
+  color: #000;
+}
+
+.prices {
+  display: flex;
+  justify-content: space-between;
+}
+
+.prices__btn {
+  margin-top: 1.1111111111rem;
+}
+
+.prices__text {
+  font-size: 3.3333333333rem;
+  color: #000;
+}
+
+.food {
+  display: none;
+}
+
+.food__text {
+  font-size: 0.8888888889rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.food__gram {
+  font-size: 0.8888888889rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.slider {
+  background-color: #f8faf9;
+}
+
 .reviews__section::before {
   content: url("../../img/icons/berryleaf.png");
   position: absolute;
@@ -487,7 +550,7 @@ img {
   content: url("../../img/icons/strawberry.png");
   position: absolute;
   right: 8%;
-  top: 42%;
+  top: 50%;
 }
 @media screen and (max-width: 768px) {
   .reviews__section::after {
