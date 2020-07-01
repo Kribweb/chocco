@@ -21,8 +21,8 @@
     @include tablets {
         position: absolute;
         top: 0;
-        right: -5%;
-        left: -5%;
+        right: 0;
+        left: 0;
         bottom: 0;
         background-color: #343639;
         display: flex;
@@ -35,8 +35,8 @@
     @include phones {
         position: absolute;
         top: 0;
-        right: -5%;
-        left: -5%;
+        right: 0;
+        left: 0;
         bottom: 0;
         background-color: #343639;
         display: flex;

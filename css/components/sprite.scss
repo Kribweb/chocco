@@ -24,5 +24,8 @@
 
 .button__arrow-elem {
     fill: #151515;
-    
+}
+
+.button__arrow-elem-left {
+    transform: scale(-1, 1);
 }

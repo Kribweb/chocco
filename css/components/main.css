@@ -115,6 +115,10 @@ img {
   fill: #151515;
 }
 
+.button__arrow-elem-left {
+  transform: scale(-1, 1);
+}
+
 .hero {
   background: url("../../img/icons/big-leaf.png") right bottom no-repeat;
   background-color: #61c4d9;
@@ -327,6 +331,11 @@ img {
   color: #000;
 }
 
+.section__slider {
+  display: flex;
+  align-items: center;
+}
+
 .headline {
   text-align: center;
 }
@@ -459,7 +468,7 @@ img {
   content: url("../../img/icons/waffles.png");
   position: absolute;
   left: 0rem;
-  bottom: -25%;
+  bottom: -18%;
 }
 @media screen and (max-width: 480px) {
   .benefits-section::before {
@@ -470,6 +479,7 @@ img {
 .display {
   display: flex;
   justify-content: space-between;
+  margin: 3.7222222222rem 0 6.8888888889rem;
 }
 
 .display__main {
@@ -477,7 +487,7 @@ img {
 }
 
 .display__title {
-  font-size: 2rem;
+  font-size: 1.9444444444rem;
   text-transform: uppercase;
   font-weight: bold;
   color: #000000;
@@ -490,14 +500,25 @@ img {
   margin-bottom: 1.6666666667rem;
 }
 
+.display__box {
+  cursor: pointer;
+}
+
+.display__box-img:hover {
+  opacity: 0.5;
+}
+
 .details {
   display: flex;
-  justify-content: space-between;
 }
 
 .details__text {
   font-weight: bold;
   color: #000;
+}
+
+.details__item {
+  flex: 1;
 }
 
 .prices {
@@ -512,6 +533,10 @@ img {
 .prices__text {
   font-size: 3.3333333333rem;
   color: #000;
+}
+
+.prices__item {
+  flex: 1;
 }
 
 .food {
@@ -532,6 +557,22 @@ img {
 
 .slider {
   background-color: #f8faf9;
+}
+
+.button__arrow {
+  border: none;
+  background-color: #f8faf9;
+}
+.button__arrow:focus {
+  outline: none;
+}
+
+.button__left {
+  margin-bottom: 0.8333333333rem;
+}
+
+.button__right {
+  margin-left: 15px;
 }
 
 .reviews__section::before {
@@ -907,8 +948,8 @@ img {
   .menu__list {
     position: absolute;
     top: 0;
-    right: -5%;
-    left: -5%;
+    right: 0;
+    left: 0;
     bottom: 0;
     background-color: #343639;
     display: flex;
@@ -922,8 +963,8 @@ img {
   .menu__list {
     position: absolute;
     top: 0;
-    right: -5%;
-    left: -5%;
+    right: 0;
+    left: 0;
     bottom: 0;
     background-color: #343639;
     display: flex;

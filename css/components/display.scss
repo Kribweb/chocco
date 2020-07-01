@@ -1,7 +1,7 @@
 .display {
     display: flex;
     justify-content: space-between;
-
+    margin: rem(67px) 0 rem(124px);
 }
 
 .display__main {
@@ -9,11 +9,12 @@
 }
 
 .display__title {
-    font-size: rem(36px);
+    font-size: rem(35px);
     text-transform: uppercase;
     font-weight: bold;
     color: #000000;
     margin-bottom: rem(10px);
+
 }
 
 .display__text {
@@ -21,4 +22,14 @@
     color: #666666;
     margin-bottom: rem(30px);
 
+}
+
+.display__box {
+    cursor: pointer;
+}
+
+.display__box-img {
+    &:hover {
+        opacity: 0.5;
+    }
 }

@@ -1,0 +1,16 @@
+.button__arrow {
+    border: none;
+    background-color: #f8faf9;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.button__left {
+    margin-bottom: rem(15px);
+}
+
+.button__right {
+    margin-left: 15px;
+}
