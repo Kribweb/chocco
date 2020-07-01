@@ -19,7 +19,7 @@
     justify-content: center;
 
     @include tablets {
-        position: absolute;
+        position: fixed;
         top: 0;
         right: 0;
         left: 0;
@@ -30,10 +30,11 @@
         align-items: center;
         font-size: rem(36px);
         cursor: pointer;
+
     }
 
     @include phones {
-        position: absolute;
+        position: fixed;
         top: 0;
         right: 0;
         left: 0;

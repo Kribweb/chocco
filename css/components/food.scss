@@ -1,5 +1,11 @@
 .food {
-    display: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.food__item {
+    display: flex;
+    justify-content: space-around;
 }
 
 
