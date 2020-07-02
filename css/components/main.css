@@ -481,9 +481,30 @@ img {
   justify-content: space-between;
   margin: 3.7222222222rem 0 6.8888888889rem;
 }
+@media screen and (max-width: 768px) {
+  .display {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.display__food {
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .display__food {
+    display: none;
+  }
+}
 
 .display__main {
   width: 40%;
+}
+@media screen and (max-width: 768px) {
+  .display__main {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .display__title {
@@ -498,6 +519,11 @@ img {
   font-size: 1rem;
   color: #666666;
   margin-bottom: 1.6666666667rem;
+}
+@media screen and (max-width: 768px) {
+  .display__text {
+    padding: 0 14%;
+  }
 }
 
 .display__box {
@@ -542,6 +568,17 @@ img {
 .food {
   display: none;
   flex-direction: column;
+  position: absolute;
+  background: white;
+  opacity: 0.9;
+  padding: 0.7222222222rem 0.8333333333rem;
+  top: 0;
+  right: 0;
+  left: 26%;
+}
+
+.food__box {
+  display: flex;
 }
 
 .food__opened {
@@ -550,7 +587,7 @@ img {
 
 .food__item {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .food__text {
@@ -563,6 +600,10 @@ img {
   font-size: 0.8888888889rem;
   font-weight: bold;
   color: #000;
+}
+
+.food__icon {
+  margin-right: 0.8333333333rem;
 }
 
 .slider {
@@ -582,7 +623,7 @@ img {
 }
 
 .button__right {
-  margin-left: 15px;
+  margin-left: 0.8333333333rem;
 }
 
 .reviews__section::before {
@@ -605,7 +646,7 @@ img {
 }
 @media screen and (max-width: 768px) {
   .reviews__section::after {
-    top: 43%;
+    top: 54%;
     right: 0;
   }
 }
@@ -940,6 +981,15 @@ img {
 @media screen and (max-width: 768px) {
   .menu {
     display: none;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #343639;
+    margin: 0;
+    justify-content: center;
   }
 }
 @media screen and (max-width: 480px) {
@@ -956,13 +1006,6 @@ img {
 }
 @media screen and (max-width: 768px) {
   .menu__list {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background-color: #343639;
-    display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 2rem;
@@ -987,7 +1030,6 @@ img {
 
 .menu__opened {
   display: flex;
-  width: 100%;
 }
 
 .menu__cross {
@@ -996,11 +1038,12 @@ img {
 @media screen and (max-width: 768px) {
   .menu__cross {
     position: absolute;
-    right: -1%;
+    right: 3%;
     top: 2%;
     cursor: pointer;
     background-color: #343639;
     display: flex;
+    border: none;
   }
 }
 @media screen and (max-width: 480px) {

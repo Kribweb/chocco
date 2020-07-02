@@ -2,11 +2,30 @@
     display: flex;
     justify-content: space-between;
     margin: rem(67px) 0 rem(124px);
+
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
+.display__food {
+    position: relative;
+
+    @include tablets {
+        display: none;
+
+    }
+}
 
 .display__main {
     width: 40%;
+
+    @include tablets {
+        width: 100%;
+        text-align: center;
+
+    }
 }
 
 .display__title {
@@ -23,6 +42,9 @@
     color: #666666;
     margin-bottom: rem(30px);
 
+    @include tablets {
+        padding: 0 14%;
+    }
 }
 
 .display__box {

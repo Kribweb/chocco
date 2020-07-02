@@ -18,14 +18,12 @@ menuCross.addEventListener("click", function (e) {
 
 
 const displayBox = document.querySelector(".display__box");
-const foodList = document.querySelector(".display__food");
+const foodList = document.querySelector(".food");
 
 displayBox.addEventListener("click", function (e) {
     e.preventDefault();
-    foodList.classList.add("food__opened");
+    foodList.classList.toggle("food__opened");
 }
 
 );
-displayBox.addEventListener("click", function (e) {
-    foodList.classList.remove("food__opened");
-})
+

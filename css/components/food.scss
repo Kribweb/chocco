@@ -1,6 +1,18 @@
 .food {
     display: none;
     flex-direction: column;
+    position: absolute;
+    background: white;
+    opacity: 0.9;
+    padding: rem(13px) rem(15px);
+    top: 0;
+    right: 0;
+    left: 26%;
+}
+
+.food__box {
+    display: flex;
+
 }
 
 .food__opened {
@@ -9,7 +21,7 @@
 
 .food__item {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 
@@ -23,4 +35,8 @@
     font-size: rem(16px);
     font-weight: bold;
     color: #000;
+}
+
+.food__icon {
+    margin-right: rem(15px);
 }
