@@ -540,8 +540,12 @@ img {
 }
 
 .food {
-  display: flex;
+  display: none;
   flex-direction: column;
+}
+
+.food__opened {
+  display: flex;
 }
 
 .food__item {

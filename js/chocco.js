@@ -22,7 +22,10 @@ const foodList = document.querySelector(".display__food");
 
 displayBox.addEventListener("click", function (e) {
     e.preventDefault();
-    foodList.
+    foodList.classList.add("food__opened");
 }
 
-)
+);
+displayBox.addEventListener("click", function (e) {
+    foodList.classList.remove("food__opened");
+})
