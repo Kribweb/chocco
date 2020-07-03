@@ -488,6 +488,17 @@ img {
   }
 }
 
+.display__pic {
+  width: 363px;
+  height: 386px;
+}
+@media screen and (max-width: 768px) {
+  .display__pic {
+    width: 291px;
+    height: 308px;
+  }
+}
+
 .display__food {
   position: relative;
 }

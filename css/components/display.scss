@@ -9,6 +9,16 @@
     }
 }
 
+.display__pic {
+    width: 363px;
+    height: 386px;
+
+    @include tablets {
+        width: 291px;
+        height: 308px;
+    }
+}
+
 .display__food {
     position: relative;
 
