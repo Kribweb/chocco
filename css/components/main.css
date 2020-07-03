@@ -334,6 +334,7 @@ img {
 .section__slider {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .headline {
@@ -489,13 +490,13 @@ img {
 }
 
 .display__pic {
-  width: 363px;
-  height: 386px;
+  width: 26.3333333333rem;
+  height: 23.5555555556rem;
 }
 @media screen and (max-width: 768px) {
   .display__pic {
-    width: 291px;
-    height: 308px;
+    width: 20.5555555556rem;
+    height: 18.7222222222rem;
   }
 }
 
@@ -525,6 +526,16 @@ img {
   color: #000000;
   margin-bottom: 0.5555555556rem;
 }
+@media screen and (max-width: 768px) {
+  .display__title {
+    font-size: 1.6666666667rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .display__title {
+    padding: 0 20%;
+  }
+}
 
 .display__text {
   font-size: 1rem;
@@ -533,7 +544,7 @@ img {
 }
 @media screen and (max-width: 768px) {
   .display__text {
-    padding: 0 14%;
+    padding: 0 15%;
   }
 }
 
@@ -632,9 +643,37 @@ img {
 .button__left {
   margin-bottom: 0.8333333333rem;
 }
+@media screen and (max-width: 768px) {
+  .button__left {
+    left: 18%;
+    top: 28%;
+    position: absolute;
+  }
+}
+@media screen and (max-width: 480px) {
+  .button__left {
+    position: absolute;
+    left: 2%;
+    top: 28%;
+  }
+}
 
 .button__right {
   margin-left: 0.8333333333rem;
+}
+@media screen and (max-width: 768px) {
+  .button__right {
+    right: 17%;
+    top: 28%;
+    position: absolute;
+  }
+}
+@media screen and (max-width: 480px) {
+  .button__right {
+    position: absolute;
+    right: 0;
+    top: 28%;
+  }
 }
 
 .reviews__section::before {
@@ -663,7 +702,7 @@ img {
 }
 @media screen and (max-width: 480px) {
   .reviews__section::after {
-    top: 40%;
+    top: 52%;
     right: 0;
   }
 }

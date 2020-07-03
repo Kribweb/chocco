@@ -6,12 +6,38 @@
         outline: none;
     }
 
+
 }
+
 
 .button__left {
     margin-bottom: rem(15px);
+
+    @include tablets {
+        left: 18%;
+        top: 28%;
+        position: absolute;
+    }
+
+    @include phones {
+        position: absolute;
+        left: 2%;
+        top: 28%;
+    }
 }
 
 .button__right {
     margin-left: rem(15px);
+
+    @include tablets {
+        right: 17%;
+        top: 28%;
+        position: absolute;
+    }
+
+    @include phones {
+        position: absolute;
+        right: 0;
+        top: 28%;
+    }
 }

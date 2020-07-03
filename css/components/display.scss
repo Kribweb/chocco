@@ -10,12 +10,12 @@
 }
 
 .display__pic {
-    width: 363px;
-    height: 386px;
+    width: rem(474px);
+    height: rem(424px);
 
     @include tablets {
-        width: 291px;
-        height: 308px;
+        width: rem(370px);
+        height: rem(337px);
     }
 }
 
@@ -45,6 +45,15 @@
     color: #000000;
     margin-bottom: rem(10px);
 
+    @include tablets {
+        font-size: rem(30px);
+
+    }
+
+    @include phones {
+        padding: 0 20%;
+
+    }
 }
 
 .display__text {
@@ -53,7 +62,7 @@
     margin-bottom: rem(30px);
 
     @include tablets {
-        padding: 0 14%;
+        padding: 0 15%;
     }
 }
 
