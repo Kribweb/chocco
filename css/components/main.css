@@ -510,6 +510,9 @@ img {
 }
 
 .display__main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 40%;
 }
 @media screen and (max-width: 768px) {
@@ -556,6 +559,10 @@ img {
   opacity: 0.5;
 }
 
+.display__price {
+  display: flex;
+}
+
 .details {
   display: flex;
 }
@@ -566,25 +573,13 @@ img {
 }
 
 .details__item {
-  flex: 1;
+  margin-right: 70px;
 }
 
 .prices {
-  display: flex;
-  justify-content: space-between;
-}
-
-.prices__btn {
-  margin-top: 1.1111111111rem;
-}
-
-.prices__text {
   font-size: 3.3333333333rem;
   color: #000;
-}
-
-.prices__item {
-  flex: 1;
+  margin-right: 40px;
 }
 
 .food {
@@ -658,9 +653,6 @@ img {
   }
 }
 
-.button__right {
-  margin-left: 0.8333333333rem;
-}
 @media screen and (max-width: 768px) {
   .button__right {
     right: 17%;
@@ -692,7 +684,7 @@ img {
   content: url("../../img/icons/strawberry.png");
   position: absolute;
   right: 8%;
-  top: 50%;
+  top: 52%;
 }
 @media screen and (max-width: 768px) {
   .reviews__section::after {
@@ -1146,7 +1138,6 @@ img {
 }
 
 .footer {
-  position: absolute;
   bottom: 0;
   left: 0;
   right: 0;

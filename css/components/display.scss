@@ -3,6 +3,7 @@
     justify-content: space-between;
     margin: rem(67px) 0 rem(124px);
 
+
     @include tablets {
         flex-direction: column;
         align-items: center;
@@ -29,12 +30,15 @@
 }
 
 .display__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 40%;
+
 
     @include tablets {
         width: 100%;
         text-align: center;
-
     }
 }
 
@@ -47,6 +51,7 @@
 
     @include tablets {
         font-size: rem(30px);
+
 
     }
 
@@ -74,4 +79,8 @@
     &:hover {
         opacity: 0.5;
     }
+}
+
+.display__price {
+    display: flex;
 }
