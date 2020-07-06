@@ -1,13 +1,33 @@
 .details {
     display: flex;
 
+
+    @include tablets {
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .details__text {
     font-weight: bold;
-    color: #000;
+    color: #666;
+    font-size: rem(18px);
 }
 
 .details__item {
-    margin-right: 70px;
+    margin-right: rem(90px);
+
+    &:last-child {
+        margin-right: 0;
+
+        @include tablets {
+            margin-right: rem(70px);
+        }
+
+        @include phones {
+            margin-right: rem(10px);
+        }
+    }
+
+
 }

@@ -25,7 +25,7 @@
 }
 
 .button__right {
-
+    margin-left: rem(30px);
 
     @include tablets {
         right: 17%;

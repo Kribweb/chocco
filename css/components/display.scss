@@ -83,4 +83,10 @@
 
 .display__price {
     display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    @include tablets {
+        justify-content: center;
+    }
 }
