@@ -1,5 +1,12 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&family=Open+Sans&display=swap");
+button {
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  padding: 0;
+}
+
 html {
   font-size: 18px;
 }
@@ -698,6 +705,99 @@ img {
   }
 }
 
+.team {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .team {
+    padding: 0 10%;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.team__item {
+  flex: 1;
+  text-align: center;
+  margin-right: 1.1111111111rem;
+  position: relative;
+  max-width: 14.4444444444rem;
+}
+@media screen and (max-width: 768px) {
+  .team__item {
+    flex: initial;
+    margin-right: 0;
+  }
+}
+
+.team__member {
+  height: 16rem;
+  margin-bottom: 1.1111111111rem;
+}
+
+.team__title {
+  color: #000;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1666666667rem;
+  font-weight: bold;
+  margin-bottom: 1.1111111111rem;
+}
+.team__title:after {
+  content: url("../../img/icons/polygon.png");
+  right: -1%;
+  top: 5%;
+  position: relative;
+}
+
+.team--version--desktop .team__content {
+  position: absolute;
+  top: 100%;
+}
+
+.team__content {
+  overflow: hidden;
+  height: 0%;
+  transition: height 0.3s;
+}
+
+.team--version--mobile {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .team--version--mobile {
+    display: flex;
+  }
+}
+
+.team--version--mobile .team__item {
+  margin-bottom: 0.5555555556rem;
+}
+
+.team__content-text {
+  font-weight: 300;
+  color: #666666;
+  font-size: 0.8333333333rem;
+}
+
+.team__occ {
+  color: #2a2323;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.team__content-block {
+  padding-bottom: 0.2777777778rem;
+}
+
+@media screen and (max-width: 768px) {
+  .team--version--desktop {
+    display: none;
+  }
+}
+
 .reviews__section::before {
   content: url("../../img/icons/berryleaf.png");
   position: absolute;
@@ -714,7 +814,7 @@ img {
   content: url("../../img/icons/strawberry.png");
   position: absolute;
   right: 8%;
-  top: 52%;
+  top: 59%;
 }
 @media screen and (max-width: 768px) {
   .reviews__section::after {
@@ -1121,7 +1221,7 @@ img {
 @media screen and (max-width: 480px) {
   .menu__cross {
     position: absolute;
-    right: -1%;
+    right: 3%;
     top: 2%;
     cursor: pointer;
     background-color: #343639;

@@ -5,6 +5,14 @@ $darkgreen: #365a49;
 $z-fixed-menu: 100;
 $tablets: 768px;
 $phones: 480px;
+
+button {
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    padding: 0;
+}
+
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&family=Open+Sans&display=swap');
 @import "media";
@@ -25,6 +33,7 @@ $phones: 480px;
 @import "food";
 @import "slider";
 @import "button";
+@import "team";
 @import "reviews";
 @import "interactive-avatar";
 @import "order-section";
