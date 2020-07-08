@@ -589,7 +589,7 @@ img {
 
 .details__text {
   font-weight: bold;
-  color: #666;
+  color: #000;
   font-size: 1rem;
 }
 
@@ -813,8 +813,8 @@ img {
 .reviews__section::after {
   content: url("../../img/icons/strawberry.png");
   position: absolute;
-  right: 8%;
-  top: 59%;
+  right: 7%;
+  top: 57%;
 }
 @media screen and (max-width: 768px) {
   .reviews__section::after {
@@ -847,6 +847,28 @@ img {
   left: 50%;
   transform: translateX(-50%);
   top: -3.6111111111rem;
+}
+
+.reviews__list {
+  position: relative;
+  min-height: 15.5555555556rem;
+}
+
+.reviews__item {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  pointer-events: none;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.reviews__item.active {
+  position: static;
+  opacity: 1;
+  pointer-events: unset;
 }
 
 .reviews__display-inner {
@@ -904,6 +926,33 @@ img {
   justify-content: center;
 }
 
+.reviews__switcher-link {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.reviews__switcher-item {
+  width: 4.4444444444rem;
+  height: 4.4444444444rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 0.3333333333rem solid transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.reviews__switcher-item:hover {
+  border-color: #0f5a47;
+}
+
+.reviews__switcher-item.active {
+  border-color: #365a49;
+}
+
 .interactive-avatar {
   width: 4.4444444444rem;
   height: 4.4444444444rem;
@@ -948,7 +997,7 @@ img {
 .order-section::before {
   content: url("../../img/icons/blueberry.png");
   position: absolute;
-  bottom: 21%;
+  bottom: 18%;
   left: 3%;
 }
 @media screen and (max-width: 768px) {
@@ -960,7 +1009,7 @@ img {
   content: url("../../img/icons/leaf8.png");
   position: absolute;
   right: 5%;
-  bottom: 21%;
+  bottom: 17%;
 }
 @media screen and (max-width: 768px) {
   .order-section::after {
@@ -1337,4 +1386,21 @@ img {
 }
 .socials__link:hover {
   opacity: 0.4;
+}
+
+.modal {
+  display: none;
+}
+
+.modal__container {
+  background: #fff;
+  padding: 0.8333333333rem 0.8333333333rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal__content {
+  margin-bottom: 0.8333333333rem;
+  color: #000;
 }
