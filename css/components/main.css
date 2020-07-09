@@ -717,6 +717,13 @@ img {
   }
 }
 
+.team-section::before {
+  content: url("../../img/icons/leafberryslider.png");
+  left: 85%;
+  top: 37%;
+  position: absolute;
+}
+
 .team__item {
   flex: 1;
   text-align: center;
@@ -1398,6 +1405,10 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.input-error {
+  border-color: hotpink;
 }
 
 .modal__content {

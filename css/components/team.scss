@@ -2,10 +2,24 @@
     display: flex;
     justify-content: space-between;
 
+
     @include tablets {
         padding: 0 10%;
         flex-direction: column;
         align-items: center;
+    }
+}
+
+.team-section {
+
+
+    &::before {
+        content: url("../../img/icons/leafberryslider.png");
+        left: 85%;
+        top: 37%;
+        position: absolute;
+
+
     }
 }
 
