@@ -1,5 +1,19 @@
 .modal {
     display: none;
+
+    &.error-modal {
+        .modal__content {
+            color: red;
+        }
+    }
+
+    &.fancybox-content {
+        padding: 0 !important;
+    }
+
+    .fancybox-button {
+        display: none;
+    }
 }
 
 .modal__container {

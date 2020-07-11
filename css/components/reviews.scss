@@ -126,6 +126,13 @@
     justify-content: center;
 }
 
+.reviews__switcher-pic {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
 .reviews__switcher-link {
     display: block;
     position: absolute;
