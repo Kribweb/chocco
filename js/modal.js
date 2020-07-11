@@ -2,8 +2,6 @@ const validateFields = (form, fieldsArray) => {
 
     fieldsArray.forEach((field) => {
         field.removeClass("input-error");
-        console.log(field.val());
-        сonsole.log();
         if (field.val().trim() == "") {
             field.addClass("input-error");
         }
