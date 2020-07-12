@@ -489,7 +489,6 @@ button {
   justify-content: space-between;
   margin: 3.7222222222rem 0 6.8888888889rem;
   position: relative;
-  right: 0;
 }
 @media screen and (max-width: 768px) {
   .display {

@@ -1,22 +1,12 @@
 const left = document.querySelector("#left");
 const right = document.querySelector("#right");
-const items = document.querySelector("#items");
-const computed = window.getComputedStyle(items);
+const itemsList = document.querySelector("#items");
 
-right.addEventListener("click", function (e) {
+right.addEventListener("click", e => {
     e.preventDefault();
-    let currentRight = parseInt(computed.right);
-
-    if (currentRight < 500) {
-        items.style.right = currentRight + 100 + "px";
-    }
-});
-
-left.addEventListener("click", function (e) {
+    itemsList.appendChild(itemsList.firstElementChild);
+})
+left.addEventListener("click", e => {
     e.preventDefault();
-    let currentRight = parseInt(computed.right);
-
-    if (currentRight > 0) {
-        items.style.right = currentRight - 100 + "px";
-    }
-});
+    itemsList.insertBefore(itemsList.lastElementChild, items.firstElementChild);
+})
