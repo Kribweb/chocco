@@ -168,108 +168,217 @@
                             </svg>
                         </button>
                     </div>
-                    <div class="display" id="items">
-                        <div class="display__pic">
-                            <img src="./img/icons/chocoleafs.png" alt="chocco leafs">
-                        </div>
-                        <div class="display__main">
-                            <div class="display__food">
-                                <a href="#" class="display__box">
-                                    <img src="./img/icons/menu.png" alt="menu" class="display__box-img">
-                                </a>
-                                <ul class="food">
-                                    <li class="food__item">
-                                        <div class="food__box">
-                                            <div class="food__icon">
-                                                <svg width="35px" height="35px" class="food__icon-elem">
-                                                    <use xlink:href="./img/icons/sprite.svg#grapes"></use>
-                                                </svg>
-                                            </div>
-                                            <div class="food__text">Виноград</div>
-                                        </div>
-                                        <div class="food__gram">25 г</div>
-                                    </li>
-                                    <li class="food__item">
-                                        <div class="food__box">
-                                            <div class="food__icon">
-                                                <svg width="35px" height="35px" class="food__icon-elem">
-                                                    <use xlink:href="./img/icons/sprite.svg#nut"></use>
-                                                </svg>
-                                            </div>
-                                            <div class="food__text">Грецкий орех</div>
-                                        </div>
-                                        <div class="food__gram">32 г</div>
-                                    </li>
-                                    <li class="food__item">
-                                        <div class="food__box">
-                                            <div class="food__icon">
-                                                <svg width="35px" height="35px" class="food__icon-elem">
-                                                    <use xlink:href="./img/icons/sprite.svg#almond"></use>
-                                                </svg>
-                                            </div>
-                                            <div class="food__text">Кунжутное семя</div>
-                                        </div>
-                                        <div class="food__gram">20 г</div>
-                                    </li>
-                                    <li class="food__item">
-                                        <div class="food__box">
-                                            <div class="food__icon">
-                                                <svg width="35px" height="35px" class="food__icon-elem">
-                                                    <use xlink:href="./img/icons/sprite.svg#powder"></use>
-                                                </svg>
-                                            </div>
-                                            <div class="food__text">Сухое молоко</div>
-                                        </div>
-                                        <div class="food__gram">10 г</div>
-                                    </li>
-                                    <li class="food__item">
-                                        <div class="food__box">
-                                            <div class="food__icon">
-                                                <svg width="35px" height="35px" class="food__icon-elem">
-                                                    <use xlink:href="./img/icons/sprite.svg#honey"></use>
-                                                </svg>
-                                            </div>
-                                            <div class="food__text">Зам. сахара</div>
-                                        </div>
-                                        <div class="food__gram">4 г</div>
-                                    </li>
-                                    <li class="food__item">
-                                        <div class="food__box">
-                                            <div class="food__icon">
-                                                <svg width="35px" height="35px" class="food__icon-elem">
-                                                    <use xlink:href="./img/icons/sprite.svg#beans"></use>
-                                                </svg>
-                                            </div>
-                                            <div class="food__text">Какао бобы</div>
-                                        </div>
-                                        <div class="food__gram">4 г</div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="display__title">Батончик "Морские водоросли"</div>
-                            <div class="display__desk">
-                                <div class="display__text">
-                                    Гранола из винограда, грецкого ореха и кунжутных семечек. В состав также входят:
-                                    сухое молоко, заменитель сахара и какао бобы.
+                    <div class="display">
+                        <ul class="items" id="items">
+                            <li class="item">
+                                <div class="display__pic">
+                                    <img src="./img/icons/chocoleafs.png" alt="chocco leafs">
                                 </div>
-                                <div class="display__details">
-                                    <ul class="details">
-                                        <li class="details__item">
-                                            <div class="details__title">Калорийность</div>
-                                            <div class="details__text">110 ккал</div>
-                                        </li>
-                                        <li class="details__item">
-                                            <div class="details__title">Вес</div>
-                                            <div class="details__text">95 грамм</div>
-                                        </li>
-                                    </ul>
+                                <div class="display__main">
+                                    <div class="display__food">
+                                        <a href="#" class="display__box">
+                                            <img src="./img/icons/menu.png" alt="menu" class="display__box-img">
+                                        </a>
+                                        <ul class="food">
+                                            <li class="food__item">
+                                                <div class="food__box">
+                                                    <div class="food__icon">
+                                                        <svg width="35px" height="35px" class="food__icon-elem">
+                                                            <use xlink:href="./img/icons/sprite.svg#grapes"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="food__text">Виноград</div>
+                                                </div>
+                                                <div class="food__gram">25 г</div>
+                                            </li>
+                                            <li class="food__item">
+                                                <div class="food__box">
+                                                    <div class="food__icon">
+                                                        <svg width="35px" height="35px" class="food__icon-elem">
+                                                            <use xlink:href="./img/icons/sprite.svg#nut"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="food__text">Грецкий орех</div>
+                                                </div>
+                                                <div class="food__gram">32 г</div>
+                                            </li>
+                                            <li class="food__item">
+                                                <div class="food__box">
+                                                    <div class="food__icon">
+                                                        <svg width="35px" height="35px" class="food__icon-elem">
+                                                            <use xlink:href="./img/icons/sprite.svg#almond"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="food__text">Кунжутное семя</div>
+                                                </div>
+                                                <div class="food__gram">20 г</div>
+                                            </li>
+                                            <li class="food__item">
+                                                <div class="food__box">
+                                                    <div class="food__icon">
+                                                        <svg width="35px" height="35px" class="food__icon-elem">
+                                                            <use xlink:href="./img/icons/sprite.svg#powder"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="food__text">Сухое молоко</div>
+                                                </div>
+                                                <div class="food__gram">10 г</div>
+                                            </li>
+                                            <li class="food__item">
+                                                <div class="food__box">
+                                                    <div class="food__icon">
+                                                        <svg width="35px" height="35px" class="food__icon-elem">
+                                                            <use xlink:href="./img/icons/sprite.svg#honey"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="food__text">Зам. сахара</div>
+                                                </div>
+                                                <div class="food__gram">4 г</div>
+                                            </li>
+                                            <li class="food__item">
+                                                <div class="food__box">
+                                                    <div class="food__icon">
+                                                        <svg width="35px" height="35px" class="food__icon-elem">
+                                                            <use xlink:href="./img/icons/sprite.svg#beans"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="food__text">Какао бобы</div>
+                                                </div>
+                                                <div class="food__gram">4 г</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="display__title">Батончик "Морские водоросли"</div>
+                                    <div class="display__desk">
+                                        <div class="display__text">
+                                            Гранола из винограда, грецкого ореха и кунжутных семечек. В состав также
+                                            входят:
+                                            сухое молоко, заменитель сахара и какао бобы.
+                                        </div>
+                                        <div class="display__details">
+                                            <ul class="details">
+                                                <li class="details__item">
+                                                    <div class="details__title">Калорийность</div>
+                                                    <div class="details__text">110 ккал</div>
+                                                </li>
+                                                <li class="details__item">
+                                                    <div class="details__title">Вес</div>
+                                                    <div class="details__text">95 грамм</div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="display__price">
+                                            <div class="prices">140 ₽</div>
+                                            <a href="#" class="btn order btn--theme--green">Заказать</a>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="display__price">
-                                    <div class="prices">140 ₽</div>
-                                    <a href="#" class="btn order btn--theme--green">Заказать</a>
+                            </li>
+                            <li class="item">
+                                <div class="display__pic">
+                                    <img src="./img/icons/chocoleafs.png" alt="chocco leafs">
                                 </div>
-                            </div>
-                        </div>
+                                <div class="display__main">
+                                    <div class="display__food">
+                                        <a href="#" class="display__box">
+                                            <img src="./img/icons/menu.png" alt="menu" class="display__box-img">
+                                        </a>
+                                        <ul class="food">
+                                            <li class="food__item">
+                                                <div class="food__box">
+                                                    <div class="food__icon">
+                                                        <svg width="35px" height="35px" class="food__icon-elem">
+                                                            <use xlink:href="./img/icons/sprite.svg#grapes"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="food__text">Виноград</div>
+                                                </div>
+                                                <div class="food__gram">25 г</div>
+                                            </li>
+                                            <li class="food__item">
+                                                <div class="food__box">
+                                                    <div class="food__icon">
+                                                        <svg width="35px" height="35px" class="food__icon-elem">
+                                                            <use xlink:href="./img/icons/sprite.svg#nut"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="food__text">Грецкий орех</div>
+                                                </div>
+                                                <div class="food__gram">32 г</div>
+                                            </li>
+                                            <li class="food__item">
+                                                <div class="food__box">
+                                                    <div class="food__icon">
+                                                        <svg width="35px" height="35px" class="food__icon-elem">
+                                                            <use xlink:href="./img/icons/sprite.svg#almond"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="food__text">Кунжутное семя</div>
+                                                </div>
+                                                <div class="food__gram">20 г</div>
+                                            </li>
+                                            <li class="food__item">
+                                                <div class="food__box">
+                                                    <div class="food__icon">
+                                                        <svg width="35px" height="35px" class="food__icon-elem">
+                                                            <use xlink:href="./img/icons/sprite.svg#powder"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="food__text">Сухое молоко</div>
+                                                </div>
+                                                <div class="food__gram">10 г</div>
+                                            </li>
+                                            <li class="food__item">
+                                                <div class="food__box">
+                                                    <div class="food__icon">
+                                                        <svg width="35px" height="35px" class="food__icon-elem">
+                                                            <use xlink:href="./img/icons/sprite.svg#honey"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="food__text">Зам. сахара</div>
+                                                </div>
+                                                <div class="food__gram">4 г</div>
+                                            </li>
+                                            <li class="food__item">
+                                                <div class="food__box">
+                                                    <div class="food__icon">
+                                                        <svg width="35px" height="35px" class="food__icon-elem">
+                                                            <use xlink:href="./img/icons/sprite.svg#beans"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="food__text">Какао бобы</div>
+                                                </div>
+                                                <div class="food__gram">4 г</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="display__title">Батончик "Морские водоросли"</div>
+                                    <div class="display__desk">
+                                        <div class="display__text">
+                                            Гранола из винограда, грецкого ореха и кунжутных семечек. В состав также
+                                            входят:
+                                            сухое молоко, заменитель сахара и какао бобы.
+                                        </div>
+                                        <div class="display__details">
+                                            <ul class="details">
+                                                <li class="details__item">
+                                                    <div class="details__title">Калорийность</div>
+                                                    <div class="details__text">110 ккал</div>
+                                                </li>
+                                                <li class="details__item">
+                                                    <div class="details__title">Вес</div>
+                                                    <div class="details__text">95 грамм</div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="display__price">
+                                            <div class="prices">140 ₽</div>
+                                            <a href="#" class="btn order btn--theme--green">Заказать</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                     <div class="button">
                         <button class="button__arrow button__right" id="right">
@@ -656,6 +765,7 @@
     <script src="./js/tabs.js"></script>
     <script src="./js/modal.js"></script>
     <script src="./js/slider2.js"></script>
+
 </body>
 
 </html>

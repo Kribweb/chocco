@@ -341,7 +341,7 @@ button {
 .section__slider {
   display: flex;
   align-items: center;
-  position: relative;
+  justify-content: center;
 }
 
 .headline {
@@ -486,9 +486,9 @@ button {
 
 .display {
   display: flex;
-  justify-content: space-between;
   margin: 3.7222222222rem 0 6.8888888889rem;
   position: relative;
+  overflow: hidden;
 }
 @media screen and (max-width: 768px) {
   .display {
@@ -660,6 +660,20 @@ button {
 
 .slider {
   background-color: #f8faf9;
+}
+
+.items {
+  position: relative;
+  right: 0;
+  transition: right 0.3s;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 
 .button__arrow {

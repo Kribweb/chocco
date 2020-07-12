@@ -9,4 +9,5 @@ right.addEventListener("click", e => {
 left.addEventListener("click", e => {
     e.preventDefault();
     itemsList.insertBefore(itemsList.lastElementChild, items.firstElementChild);
-})
+
+});
