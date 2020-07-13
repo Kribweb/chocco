@@ -1,0 +1,93 @@
+.products-menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+
+}
+
+.products-menu-section {
+    background: url("../../img/icons/bg.png") center center/cover no-repeat;
+    position: relative;
+
+}
+
+.products-menu-section__title {
+    text-align: left;
+    position: absolute;
+    top: rem(90px);
+    left: rem(73px);
+    color: white;
+}
+
+.products-menu__item {
+    height: 100%;
+}
+
+.products-menu__text {
+    transform: rotate(-90deg);
+    color: #fff;
+    font-size: rem(48px);
+    font-weight: 700;
+    position: absolute;
+    bottom: 11%;
+    white-space: nowrap;
+    width: 100%;
+
+}
+
+.products-menu__title {
+    position: relative;
+    width: rem(100px);
+    display: flex;
+
+    background-position: left bottom;
+    justify-content: center;
+    align-items: flex-end;
+    text-decoration: none;
+
+    &:after {
+        content: "";
+        display: block;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        position: absolute;
+
+    }
+}
+
+.products-menu__content {
+    background: #3d3f41;
+    width: 0;
+    position: relative;
+    overflow: hidden;
+    transition: width .7s;
+    opacity: 0.93;
+}
+
+.products-menu__container {
+    padding: rem(40px) rem(73px) rem(45px) rem(26px);
+}
+
+.products-menu__close {
+    position: absolute;
+    top: rem(20px);
+    right: rem(25px);
+    border: none;
+    background: transparent;
+}
+
+.products-menu__content-text {
+    min-width: rem(630px);
+    padding: rem(50px) rem(127px) rem(50px) rem(27px);
+    overflow-y: auto;
+
+    color: #ffffff;
+    font-size: rem(16px);
+    font-weight: 400;
+    position: relative;
+    height: 100%;
+}

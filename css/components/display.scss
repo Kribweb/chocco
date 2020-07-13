@@ -1,12 +1,8 @@
 .display {
     display: flex;
-
     margin: rem(67px) 0 rem(124px);
     position: relative;
     overflow: hidden;
-
-
-
 
     @include tablets {
         flex-direction: column;

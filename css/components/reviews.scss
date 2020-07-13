@@ -3,7 +3,7 @@
     &::before {
         content: url("../../img/icons/berryleaf.png");
         position: absolute;
-        top: 55%;
+        top: 71%;
         left: 0;
 
         @include tablets {
@@ -16,7 +16,7 @@
         content: url("../../img/icons/strawberry.png");
         position: absolute;
         right: 7%;
-        top: 57%;
+        top: 62%;
 
         @include tablets {
             top: 54%;

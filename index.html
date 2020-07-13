@@ -159,7 +159,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="section slider" id="items">
+            <section class="section section__slider">
                 <div class="container section__slider">
                     <div class="button">
                         <button class="button__arrow button__left" id="left">
@@ -169,7 +169,7 @@
                         </button>
                     </div>
                     <div class="display">
-                        <ul class="items">
+                        <ul class="items" id="items">
                             <li class="item">
                                 <div class="display__pic">
                                     <img src="./img/icons/chocoleafs.png" alt="chocco leafs">
@@ -503,75 +503,84 @@
                     </ul>
                 </div>
             </section>
-            <section class="section accordeon" id="acc-menu">
-                <div class="container">
-                    <div class="section__title">Меню</div>
-                    <ul class="accordeon__list" data-list>
-                        <li class="accordeon__item active">
-                            <a href="#" class="accordeon__trigger" data-trigger="active">
-                                <img src="./img/icons/11.jpg" alt="">
-                                <span class="accordeon__title">Батончики с молоком</span>
-                            </a>
-                            <div class="accordeon__wrap">
-                                <div class="accordeon__content">
-                                    <p class="accordeon__text">Рекомендуем употреблять батончики вместе с кокосовым или
-                                        миндальным молоком. Так и вкуснее, и полезнее.
-                                        Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех
-                                        вокруг. Как
-                                        классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно,
-                                        за такую
-                                        еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю
-                                        поздравить
-                                        с днём Победы.
-                                    </p>
-                                    <a href="#" class="close accordeon__close">x</a>
+            <section class="section products-menu-section">
+                <h1 class="section__title products-menu-section__title">Меню</h1>
+                <ul class="products-menu">
+                    <li class="products-menu__item">
+                        <a href="#" class="products-menu__title">
+                            <img src="./img/icons/11.jpg" alt="" class="products-menu__image">
+                            <div class="products-menu__text">Батончики с молоком</div>
+                        </a>
+                        <div class="products-menu__content">
+                            <div class="products-menu__container">
+                                <button class="products-menu__close" type="button">
+                                    <img src="./img/icons/cross.png" alt="" class="products-menu__close-icon">
+                                </button>
+                                <div class="products-menu__content-text">
+                                    Рекомендуем употреблять батончики вместе с кокосовым или
+                                    миндальным молоком. Так и вкуснее, и полезнее.
+                                    Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех
+                                    вокруг. Как
+                                    классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно,
+                                    за такую
+                                    еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю
+                                    поздравить
+                                    с днём Победы.
+
                                 </div>
                             </div>
-                        </li>
-                        <li class="accordeon__item">
-                            <a href="#" class="accordeon__trigger" data-trigger="active">
-                                <img src="./img/icons/22.jpg" alt="">
-                                <span class="accordeon__title">С мёдом и фруктами</span>
-                            </a>
-                            <div class="accordeon__wrap">
-                                <div class="accordeon__content">
-                                    <p class="accordeon__text">Рекомендуем употреблять батончики вместе с кокосовым или
-                                        миндальным молоком. Так и вкуснее, и полезнее.
-                                        Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех
-                                        вокруг. Как
-                                        классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно,
-                                        за такую
-                                        еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю
-                                        поздравить
-                                        с днём Победы.
-                                    </p>
-                                    <a href="#" class="close accordeon__close">x</a>
+                        </div>
+                    </li>
+                    <li class="products-menu__item">
+                        <a href="#" class="products-menu__title">
+                            <img src="./img/icons/22.jpg" alt="" class="products-menu__image">
+                            <div class="products-menu__text">С мёдом и фруктами</div>
+                        </a>
+                        <div class="products-menu__content">
+                            <div class="products-menu__container">
+                                <button class="products-menu__close" type="button">
+                                    <img src="./img/icons/cross.png" alt="" class="products-menu__close-icon">
+                                </button>
+                                <div class="products-menu__content-text">
+                                    Рекомендуем употреблять батончики вместе с кокосовым или
+                                    миндальным молоком. Так и вкуснее, и полезнее.
+                                    Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех
+                                    вокруг. Как
+                                    классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно,
+                                    за такую
+                                    еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю
+                                    поздравить
+                                    с днём Победы.
+
                                 </div>
                             </div>
-                        </li>
-                        <li class="accordeon__item">
-                            <a href="#" class="accordeon__trigger" data-trigger="active">
-                                <img src="./img/icons/33.jpg" alt="">
-                                <span class="accordeon__title">Дикие ягоды</span>
-                            </a>
-                            <div class="accordeon__wrap">
-                                <div class="accordeon__content">
-                                    <p class="accordeon__text">Рекомендуем употреблять батончики вместе с кокосовым или
-                                        миндальным молоком. Так и вкуснее, и полезнее.
-                                        Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех
-                                        вокруг. Как
-                                        классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно,
-                                        за такую
-                                        еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю
-                                        поздравить
-                                        с днём Победы.
-                                    </p>
-                                    <a href="#" class="close accordeon__close">x</a>
+                        </div>
+                    </li>
+                    <li class="products-menu__item">
+                        <a href="#" class="products-menu__title">
+                            <img src="./img/icons/33.jpg" alt="" class="products-menu__image">
+                            <div class="products-menu__text">Дикие ягоды</div>
+                        </a>
+                        <div class="products-menu__content">
+                            <div class="products-menu__container">
+                                <button class="products-menu__close" type="button">
+                                    <img src="./img/icons/cross.png" alt="" class="products-menu__close-icon">
+                                </button>
+                                <div class="products-menu__content-text">
+                                    Рекомендуем употреблять батончики вместе с кокосовым или
+                                    миндальным молоком. Так и вкуснее, и полезнее.
+                                    Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех
+                                    вокруг. Как
+                                    классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно,
+                                    за такую
+                                    еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю
+                                    поздравить
+                                    с днём Победы.
                                 </div>
                             </div>
-                        </li>
-                    </ul>
-                </div>
+                        </div>
+                    </li>
+                </ul>
             </section>
             <section class="section reviews__section">
                 <div class="container">
@@ -835,6 +844,7 @@
     <script src="./js/tabs.js"></script>
     <script src="./js/modal.js"></script>
     <script src="./js/slider2.js"></script>
+    <script src="./js/acco.js"></script>
 
 </body>
 
