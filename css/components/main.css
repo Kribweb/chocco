@@ -1330,7 +1330,7 @@ button {
   border-radius: 10px;
 }
 
-.map-section {
+.map {
   width: 100%;
   height: 100%;
 }
@@ -1449,6 +1449,12 @@ button {
   background: url("../../img/icons/bg.png") center center/cover no-repeat;
   position: relative;
 }
+.products-menu-section::before {
+  position: absolute;
+  content: url(../../img/icons/hallon.png);
+  left: 1%;
+  top: -11%;
+}
 
 .products-menu-section__title {
   text-align: left;
@@ -1534,5 +1540,176 @@ button {
   display: flex;
   position: relative;
   transition: right 0.3s;
+  right: 0;
+}
+
+.player {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 36.6666666667rem;
+  width: 100%;
+  height: 20.5555555556rem;
+}
+@media screen and (max-width: 768px) {
+  .player {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .player {
+    max-height: 16.3888888889rem;
+  }
+}
+
+.player__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  position: relative;
+}
+
+.player__elem {
+  width: 100%;
+  height: 100%;
+}
+
+.player__splash {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 5;
+  overflow: hidden;
+}
+
+.player__splash img {
+  width: 100%;
+  height: 90%;
+}
+
+.active .player__splash {
+  display: none;
+}
+
+.player__controls {
+  position: absolute;
+  bottom: 0;
+  z-index: 5;
+  height: 2.0555555556rem;
+  background: #404040;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+@media screen and (max-width: 480px) {
+  .player__controls {
+    justify-content: space-between;
+  }
+}
+
+.player__playback {
+  display: flex;
+  align-items: center;
+  width: 54%;
+  position: relative;
+  margin-right: 0.8333333333rem;
+}
+@media screen and (max-width: 480px) {
+  .player__playback {
+    width: 35%;
+  }
+}
+.player__playback:before {
+  content: "";
+  width: 100%;
+  height: 0.2222222222rem;
+  position: absolute;
+  display: block;
+  background: url(../../img/icons/stick.png) no-repeat;
+}
+
+.player__playback-button {
+  background: #626262;
+  border: none;
+  width: 0.6666666667rem;
+  height: 0.6666666667rem;
+  border-radius: 50%;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 0;
+}
+
+.player__start {
+  background: url(../../img/icons/play.png) no-repeat;
+  background-position: center;
+  width: 3.0555555556rem;
+  height: 100%;
+  border: none;
+  margin-right: 0.5555555556rem;
+}
+
+.player__paused {
+  background: url(../../img/icons/pause.png) no-repeat;
+  background-position: center;
+}
+
+.player__start:hover {
+  cursor: pointer;
+}
+
+.player__volume {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 20%;
+}
+@media screen and (max-width: 480px) {
+  .player__volume {
+    width: 33%;
+  }
+}
+
+.volume__pic {
+  width: 2.2222222222rem;
+  height: 1.1111111111rem;
+  border: none;
+  background-position: center;
+  background: url(../../img/icons/Volumgray.png) no-repeat;
+}
+
+.volume__pic--nosound {
+  background: url(../../img/icons/mute.png) no-repeat;
+  background-position: center;
+}
+
+.volume__playback {
+  width: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.volume__playback:before {
+  content: "";
+  width: 90%;
+  height: 0.2222222222rem;
+  position: absolute;
+  display: block;
+  background: url(../../img/icons/stickvol.png) no-repeat;
+}
+
+.volume__playback-button {
+  background: #626262;
+  border: none;
+  width: 0.6666666667rem;
+  height: 0.6666666667rem;
+  border-radius: 50%;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
   right: 0;
 }

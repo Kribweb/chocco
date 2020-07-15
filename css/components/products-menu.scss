@@ -11,6 +11,12 @@
     background: url("../../img/icons/bg.png") center center/cover no-repeat;
     position: relative;
 
+    &::before {
+        position: absolute;
+        content: url(../../img/icons/hallon.png);
+        left: 1%;
+        top: -11%;
+    }
 }
 
 .products-menu-section__title {
