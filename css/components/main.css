@@ -341,6 +341,7 @@ button {
 .section__slider {
   display: flex;
   align-items: center;
+  background-color: #f8faf9;
 }
 
 .headline {
@@ -488,12 +489,6 @@ button {
   margin: 3.7222222222rem 0 6.8888888889rem;
   position: relative;
   overflow: hidden;
-}
-@media screen and (max-width: 768px) {
-  .display {
-    flex-direction: column;
-    align-items: center;
-  }
 }
 
 .display__pic {
@@ -1535,6 +1530,11 @@ button {
   display: flex;
   flex: 0 0 58%;
 }
+@media screen and (max-width: 768px) {
+  .item {
+    flex-direction: column;
+  }
+}
 
 .items {
   display: flex;
@@ -1542,7 +1542,6 @@ button {
   transition: right 0.3s;
   right: 0;
 }
-
 .player {
   position: relative;
   display: flex;
@@ -1652,7 +1651,7 @@ button {
   margin-right: 0.5555555556rem;
 }
 
-.player__paused {
+.paused {
   background: url(../../img/icons/pause.png) no-repeat;
   background-position: center;
 }

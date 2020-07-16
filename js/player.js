@@ -6,14 +6,27 @@ let eventsInit = () => {
 
 
         if (playerContainer.hasClass('paused')) {
-            playerContainer.removeClass("paused");
             player.pauseVideo();
         } else {
-            playerContainer.addClass("paused");
             player.playVideo()
         }
 
     });
+    $(".player__playback").click(e => {
+        const bar = $(e.currentTarget);
+        const clickedPosition = e.originalEvent.layerX;
+        const newButtonPositionPercent = (clickedPosition / bar.width()) * 100;
+        const newPlaybackPositionSec = (player.getDuration() / 100) * newButtonPositionPercent;
+        $(".player__playback-button").css({
+            left: `${newButtonPositionPercent}%`
+        });
+        player.seekTo(newPlaybackPositionSec);
+
+    });
+    $(".player__splash").click(e => {
+        player.playVideo();
+    })
+
 };
 const formatTime = timeSec => {
     const roundTime = Math.round(timeSec);
@@ -35,11 +48,26 @@ const onPlayerReady = () => {
     }
     interval = setInterval(() => {
         const completedSec = player.getCurrentTime();
+        const completedPercent = (completedSec / durationSec) * 100;
+        $(".player__playback-button").css({
+            left: `${completedPercent}%`
+        });
         $(".player__duration-completed").text(formatTime(completedSec));
     }, 1000);
 };
 
-
+const onPlayerStateChange = event => {
+    switch (event.data) {
+        case 1:
+            playerContainer.addClass('active');
+            playerContainer.addClass("paused");
+            break;
+        case 2:
+            playerContainer.removeClass('active');
+            playerContainer.removeClass("paused");
+            break;
+    }
+};
 
 function onYouTubeIframeAPIReady() {
     player = new YT.Player('yt-player', {
@@ -48,7 +76,7 @@ function onYouTubeIframeAPIReady() {
         videoId: 'LXb3EKWsInQ',
         events: {
             onReady: onPlayerReady,
-            // 'onStateChange': onPlayerStateChange
+            onStateChange: onPlayerStateChange
         },
         playerVars: {
             controls: 0,

@@ -4,4 +4,6 @@
     transition: right .3s;
     right: 0;
 
+    @include tablets {}
+
 }

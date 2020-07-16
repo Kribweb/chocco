@@ -3,4 +3,9 @@
     justify-content: center;
     display: flex;
     flex: 0 0 58%;
+
+    @include tablets {
+        flex-direction: column;
+
+    }
 }
