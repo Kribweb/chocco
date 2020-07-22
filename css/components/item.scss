@@ -4,8 +4,10 @@
     display: flex;
     flex: 0 0 58%;
 
+
     @include tablets {
         flex-direction: column;
+        flex: 0 0 100%;
 
     }
 }

@@ -16,6 +16,11 @@
         content: url(../../img/icons/hallon.png);
         left: 1%;
         top: -11%;
+
+        @include tablets {
+            top: -7%;
+            left: 2%;
+        }
     }
 }
 
@@ -29,6 +34,7 @@
 
 .products-menu__item {
     height: 100%;
+    display: flex;
 }
 
 .products-menu__text {
@@ -47,10 +53,8 @@
     position: relative;
     width: rem(100px);
     display: flex;
-
     background-position: left bottom;
     justify-content: center;
-    align-items: flex-end;
     text-decoration: none;
 
     &:after {
@@ -88,12 +92,12 @@
 
 .products-menu__content-text {
     min-width: rem(630px);
-    padding: rem(50px) rem(127px) rem(50px) rem(27px);
+    padding: rem(50px) rem(224px) rem(50px) rem(27px);
     overflow-y: auto;
-
     color: #ffffff;
-    font-size: rem(16px);
+    font-size: rem(15px);
     font-weight: 400;
     position: relative;
     height: 100%;
+    text-align: left;
 }

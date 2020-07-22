@@ -3,6 +3,7 @@
     justify-content: space-between;
 
 
+
     @include tablets {
         padding: 0 10%;
         flex-direction: column;
@@ -11,13 +12,21 @@
 }
 
 .team-section {
+    position: relative;
 
     &::before {
         content: url("../../img/icons/leafberryslider.png");
         left: 85%;
         top: 37%;
         position: absolute;
+
+        @include tablets {
+            top: 29%;
+            left: 78%;
+        }
     }
+
+
 }
 
 .team__item {

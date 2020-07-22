@@ -47,7 +47,7 @@ $(".products-menu__title").on("click", e => {
         closeEveryItemInContainer(container)
     } else {
         closeEveryItemInContainer(container)
-        openItem(item);
+        openItems(item);
     }
 
 });

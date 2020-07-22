@@ -1,10 +1,44 @@
+.player-section {
+    background-color: #f8faf9;
+    position: relative;
+
+    &::before {
+        content: url("../../img/icons/leaf-player.png");
+        position: absolute;
+        top: 74%;
+        left: 6%;
+    }
+
+    &::after {
+        content: url("../../img/icons/leaf-video.png");
+        position: absolute;
+        right: 7%;
+    }
+}
+
+.player-box {
+
+
+    &::after {
+        content: url("../../img/icons/blackhallon.png");
+        position: absolute;
+        top: 74%;
+        right: -4%;
+
+        @include tablets {
+            top: 75%;
+            right: -6%;
+        }
+    }
+}
+
 .player {
     position: relative;
     display: flex;
     flex-direction: column;
     max-width: rem(660px);
-    width: 100%;
     height: rem(370px);
+    width: 100%;
 
 
     @include tablets {
